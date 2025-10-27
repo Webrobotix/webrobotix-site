@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebRobotix Animatronics</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-6 space-y-10 max-w-6xl mx-auto">
+  <!-- Header -->
+  <header class="text-center">
+    <h1 class="text-4xl font-bold text-blue-600">WebRobotix Animatronics</h1>
+    <p class="text-gray-600 text-lg mt-2">Bringing Robots to Life</p>
+  </header>
+
+  <!-- Featured Products -->
+  <section>
+    <h2 class="text-2xl font-semibold mb-4">Featured Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="roboraptor.html" class="p-4 space-y-3 border rounded-xl shadow hover:shadow-lg transition block">
+        <img src="images/roboraptor.jpg" alt="RoboRaptor" class="w-full h-40 object-cover rounded-md" />
+        <h3 class="text-xl font-bold text-blue-500">RoboRaptor</h3>
+        <p class="text-gray-700">Dinosaur-themed animatronic for museums & exhibitions.</p>
+      </a>
+      <a href="servobuddy.html" class="p-4 space-y-3 border rounded-xl shadow hover:shadow-lg transition block">
+        <img src="images/servobuddy.jpg" alt="ServoBuddy" class="w-full h-40 object-cover rounded-md" />
+        <h3 class="text-xl font-bold text-blue-500">ServoBuddy</h3>
+        <p class="text-gray-700">Educational animatronic robot for STEM learning.</p>
+      </a>
+      <a href="cyberpuppet.html" class="p-4 space-y-3 border rounded-xl shadow hover:shadow-lg transition block">
+        <img src="images/cyberpuppet.jpg" alt="CyberPuppet" class="w-full h-40 object-cover rounded-md" />
+        <h3 class="text-xl font-bold text-blue-500">CyberPuppet</h3>
+        <p class="text-gray-700">Motion-controlled puppet for film and theatre.</p>
+      </a>
+      <a href="skullbot.html" class="p-4 space-y-3 border rounded-xl shadow hover:shadow-lg transition block">
+        <img src="images/skullbot.jpg" alt="SkullBot" class="w-full h-40 object-cover rounded-md" />
+        <h3 class="text-xl font-bold text-blue-500">SkullBot</h3>
+        <p class="text-gray-700">Halloween-ready animatronic skull with moving jaw and eyes.</p>
+      </a>
+      <a href="eyebot.html" class="p-4 space-y-3 border rounded-xl shadow hover:shadow-lg transition block">
+        <img src="images/eyebot.jpg" alt="EyeBot" class="w-full h-40 object-cover rounded-md" />
+        <h3 class="text-xl font-bold text-blue-500">EyeBot</h3>
+        <p class="text-gray-700">Compact animatronic eye system for robotics experiments.</p>
+      </a>
+      <a href="servohub.html" class="p-4 space-y-3 border rounded-xl shadow hover:shadow-lg transition block">
+        <img src="images/servohub.jpg" alt="ServoHub" class="w-full h-40 object-cover rounded-md" />
+        <h3 class="text-xl font-bold text-blue-500">ServoHub</h3>
+        <p class="text-gray-700">16-channel servo controller board with intuitive software control.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section>
+    <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+    <form id="contactForm" class="space-y-4 max-w-lg">
+      <input name="name" placeholder="Your Name" class="w-full p-2 border rounded-md" required />
+      <input name="email" type="email" placeholder="Your Email" class="w-full p-2 border rounded-md" required />
+      <textarea name="message" placeholder="Your Message" class="w-full p-2 border rounded-md" rows="4" required></textarea>
+      <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-lg">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 pt-10 border-t mt-10">
+    &copy; 2025 WebRobotix Animatronics. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Message sent! We'll get back to you soon.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
